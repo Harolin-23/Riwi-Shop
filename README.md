@@ -29,3 +29,7 @@ El mensaje promocional en la sección principal es grande y claro, acompañado d
 
 ## Product section
 Este apartado cuenta con la muestra de los productos y la seleccion de acciones con estos mismos sea (`Like`, `More info`, `add Cart`, `reedem`).
+las Acciones de esto mismo interactura con los modales anteriormente nombrados para una respuesta con el usuario y el producto.
+
+![ImageHome](View/gifViwe.gif)
+
