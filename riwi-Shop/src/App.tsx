@@ -1,10 +1,13 @@
 import { useState } from 'react'
+import Header from './Components/Header/Header.tsx'
+
+
 
 function App() {
 
   return (
     <>
-    <h1>Hola mundo :3</h1>
+    <Header />
     </>
   )
 }
