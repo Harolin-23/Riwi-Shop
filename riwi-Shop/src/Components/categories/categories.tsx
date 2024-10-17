@@ -12,12 +12,13 @@ interface CategoriesProps {
     categories: Category[];
 }
 
-const Categories: React.FC<CategoriesProps> = ({ categories }) => {
+const Categories: React.FC<CategoriesProps> = ({ }) => {
     return (
         <section className="categories">
         <div className="tex-andMetaAR">
             <p className="texlang">Shop From <span className="p-1Alt">Top Categories</span></p>
             <a className="link-more" href="">View All</a>
+        
         </div>
         <div className="categoriesBot-1">
             <div className="ct-1 redon-but-cat">
