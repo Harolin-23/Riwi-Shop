@@ -1,6 +1,9 @@
 import { useState } from 'react'
-import Header from './Components/Header/Header.tsx'
 
+
+//imports components
+import Header from './Components/Header/Header.tsx'
+import Categories from './Components/categories/categories.tsx'
 
 
 function App() {
@@ -8,6 +11,7 @@ function App() {
   return (
     <>
     <Header />
+    <Categories />
     </>
   )
 }
