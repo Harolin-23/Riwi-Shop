@@ -27,6 +27,7 @@
   z-index: -70;
   order: 100;
   padding-right: 90px;
+  transition: 0.4s;
  
 }
 .BannerLanding img {
@@ -120,9 +121,16 @@
   .BannerLanding {
     padding-top: 90px;
     height: 500px;
-    transition: 0.4s;
   }
 
 
 
+}
+
+@media (min-width: 2240px) {
+  .BannerLanding{
+    height: 1000px;
+   
+  }
+  
 }
