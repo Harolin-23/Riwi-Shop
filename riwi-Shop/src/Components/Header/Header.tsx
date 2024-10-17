@@ -3,6 +3,9 @@ import React, { useState } from 'react';
 import './Header.scss'
 
 import Logo from '../../assets/logos/logo2.png'
+//imports componets
+
+import Menu from './components/Menu.tsx'
 
 
 const Header: React.FC = () => {
@@ -10,13 +13,13 @@ const Header: React.FC = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => {
-        console.log(menuOpen)
         setMenuOpen(!menuOpen);
     };
 
     return (
         <header className="head-v-top">
         <section className="contains-v-top">
+            <Menu isActive={menuOpen}  />
             <a href="./LandingPage.html" className="logo-up-1">
                 <img src={Logo} alt="Logo" />
             </a>
@@ -31,14 +34,6 @@ const Header: React.FC = () => {
                     <label htmlFor="menu-toggle" id="menu-icon" onClick={toggleMenu}>
                         &#9776;
                     </label>
-                    <div id="menu" style={{ display: menuOpen ? 'block' : 'none' }}>
-                        <ul>
-                            <li><a href="./LandingPage.html">Home</a></li>
-                            <li><a href="./redirects/shopRiwi/shop.html">Shop</a></li>
-                            <li><a href="./redirects/contact/AboutUs.html">About</a></li>
-                            <li><a href="./redirects/contact/contact.html">Contact</a></li>
-                        </ul>
-                    </div>
                 </div>
                 <div className="Meta-aRF">
                     <a href="../LandingPage.html" className="link1Home">Home</a>

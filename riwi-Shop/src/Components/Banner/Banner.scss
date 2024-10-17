@@ -26,7 +26,8 @@
   flex-wrap: wrap;
   z-index: -70;
   order: 100;
-  padding-right: 30px;
+  padding-right: 90px;
+ 
 }
 .BannerLanding img {
   position: absolute;
@@ -37,6 +38,7 @@
   z-index: -10;
   object-fit: cover;
   order: 20;
+  padding-left: 1%;
   object-position: center center;
 }
 
@@ -94,7 +96,13 @@
   .BannerLanding .info-mS-SHOP {
     position: relative;
     width: 100%;
+    font-size: calc(0.5em + 1vw);
+    padding-left: 6%;
     background-color: #ffffff00;
+  }
+
+  .BannerLanding .info-mS-SHOP p{
+    font-size: calc(0.8em + 1vw);
   }
 
   .BannerLanding .info-mS-SHOP h2 {
