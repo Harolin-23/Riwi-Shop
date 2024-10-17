@@ -1,0 +1,107 @@
+:root {
+  --shadow1: 1px 2px 2px 1px rgba(0, 0, 0, 0.233);
+  --total: black;
+  --font1: "Poppins", sans-serif;
+  --hovers: rgb(192, 185, 255);
+  --color1: #8d4494a6;
+  --color2: rgb(40, 50, 128);
+  --color3: #6b5cff;
+  --color4: rgba(234, 162, 252, 0.582);
+  --color5: #dad5fc;
+  --color6: aliceblue;
+  --color7: rgb(241, 239, 255);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+
+.BannerLanding {
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-wrap: wrap;
+  z-index: -70;
+  order: 100;
+  padding-right: 30px;
+}
+.BannerLanding img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99%;
+  height: 100%;
+  z-index: -10;
+  object-fit: cover;
+  order: 20;
+  object-position: center center;
+}
+
+.BannerLanding .info-mS-SHOP {
+  position: relative;
+  width: 50%;
+  padding-left: 30px;
+  background-color: var(--color5);
+  border-radius: 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2%;
+  transition: all 0.25s ease;
+}
+
+.BannerLanding .info-mS-SHOP h2 {
+  font-size: calc(1em + 1vw);
+  color: var(--color2);
+}
+
+.BannerLanding .info-mS-SHOP h1 {
+  font-size: calc(3em + 1vw);
+  color: var(--color2);
+}
+
+.BannerLanding .info-mS-SHOP p {
+  font-size: calc(0.3em + 1vw);
+  color: white;
+}
+
+.BTN-RED-SHOP {
+  padding: 20px;
+  margin-top: 30px;
+  border: none;
+  font-size: 1.3em;
+  color: var(--color5);
+  border-radius: 6px;
+  background-color: var(--color3);
+}
+
+.BTN-RED-SHOP:hover {
+  background-color: var(--color2);
+  cursor: pointer;
+}
+
+.BTN-RED-SHOP:active {
+  transform: scale(1.05);
+  background-color: var(--color4);
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.315);
+}
+
+@media (max-width: 1034px) {
+  .BannerLanding .info-mS-SHOP {
+    position: relative;
+    width: 100%;
+    background-color: #ffffff00;
+  }
+
+  .BannerLanding .info-mS-SHOP h2 {
+    color: var(--color5);
+  }
+
+  .BannerLanding .info-mS-SHOP h1 {
+    color: white;
+  }
+}
