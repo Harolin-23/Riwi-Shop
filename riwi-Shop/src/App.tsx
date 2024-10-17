@@ -1,9 +1,7 @@
 import { useState } from 'react'
-
-
-//imports components
 import Header from './Components/Header/Header.tsx'
-import Categories from './Components/categories/categories.tsx'
+import Banner from './Components/Banner/Banner.tsx'
+
 
 
 function App() {
@@ -11,7 +9,7 @@ function App() {
   return (
     <>
     <Header />
-    <Categories />
+    <Banner />
     </>
   )
 }
